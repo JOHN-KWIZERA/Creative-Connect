@@ -13,7 +13,7 @@ Before running the project, make sure you have:
 - **Node.js** (>= 16.x)
 - **MongoDB** (Local or Cloud - e.g., MongoDB Atlas)
 - **Git** installed
-- **Vercel (Optional, for deployment)**
+- **Render (Optional, for deployment)**
 
 ---
 
