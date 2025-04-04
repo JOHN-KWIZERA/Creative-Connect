@@ -11,14 +11,14 @@ const App = () => {
   const [selectedJob, setSelectedJob] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5001/api/jobs")
+    axios.get("https://creative-connect-backend.onrender.com/api/jobs")
       .then((response) => setJobs(response.data))
       .catch((error) => console.error("Error fetching jobs:", error));
   }, []);
 
   const addJob = async (job) => {
     try {
-      const response = await axios.post("http://localhost:5001/api/jobs", job);
+      const response = await axios.post("https://creative-connect-backend.onrender.com/api/jobs", job);
       setJobs((prevJobs) => [...prevJobs, response.data]);
     } catch (error) {
       console.error("Error adding job:", error);
